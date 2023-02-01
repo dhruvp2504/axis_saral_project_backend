@@ -18,8 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.axis.saral.service.entity.NewsFeed;
 import com.axis.saral.service.service.NewsFeedService;
 
-@CrossOrigin("http://localhost:3000")
 @RestController
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
+
 public class NewsFeedController {
 
 	@Autowired

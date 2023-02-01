@@ -30,7 +30,7 @@ public class Project {
 	private String projectStatus;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "stakeholder_id")
+	@JoinColumn(name = "project_id")
 	private List<StakeHolder> stakeHolderList;
 	
 	public Project() {

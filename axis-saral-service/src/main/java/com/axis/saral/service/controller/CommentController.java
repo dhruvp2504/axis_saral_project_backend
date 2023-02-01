@@ -19,8 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.axis.saral.service.entity.Comment;
 import com.axis.saral.service.service.CommentService;
 
-@CrossOrigin("http://localhost:3000")
 @RestController
+@CrossOrigin(value = "http://localhost:3000")
+
 public class CommentController {
 
 	@Autowired

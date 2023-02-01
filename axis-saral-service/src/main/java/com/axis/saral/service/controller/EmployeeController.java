@@ -2,6 +2,7 @@ package com.axis.saral.service.controller;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.axis.saral.service.entity.Employee;
 import com.axis.saral.service.service.EmployeeService;
 
-@CrossOrigin("http://localhost:3000")
 @RestController
+@CrossOrigin(value = "http://localhost:3000")
+
 public class EmployeeController {
 
 	@Autowired
